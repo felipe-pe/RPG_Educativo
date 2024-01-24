@@ -23,7 +23,7 @@ def verificar_resultado_do_desafio(resultado):
             #O codigo não foi executado por erro do codigo 
             
         case _:
-            print("oloco meu")
+            ...
             #Erros inesperados
             
   
