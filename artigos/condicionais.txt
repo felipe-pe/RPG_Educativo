@@ -1,0 +1,64 @@
+
+## Estruturas Condicionais em Python: if, elif, else e or ##
+
+## Quando estamos programando em Python, frequentemente nos deparamos com a necessidade
+de tomar decisões com base em condições específicas. As estruturas condicionais 
+são fundamentais para controlar o fluxo do programa, permitindo que diferentes
+blocos de código sejam executados com base em certas condições. Neste artigo, 
+vamos explorar as estruturas condicionais if, elif, else e o operador or.
+
+## 1. if: Tomando Decisões Simples
+A estrutura if é a pedra angular das estruturas condicionais em Python. 
+Ela permite que um bloco de código seja executado somente se uma determinada
+condição for verdadeira. Veja um exemplo básico:
+
+idade = 18
+if idade >= 18:
+    print("Você é maior de idade.")
+
+Neste exemplo, o código dentro do bloco if será executado apenas se a condição idade >= 18 for verdadeira.
+
+## 2. elif: Alternativas para Tomadas de Decisão
+Às vezes, temos mais de uma condição a ser verificada. Para isso, utilizamos a estrutura
+elif (abreviação de "else if"). Ela permite verificar múltiplas condições de forma
+sequencial, executando o bloco de código associado à primeira condição verdadeira:
+
+nota = 75
+if nota >= 90:
+    print("A")
+elif nota >= 80:
+    print("B")
+elif nota >= 70:
+    print("C")
+else:
+    print("F")
+
+Neste exemplo, o código verifica a nota do aluno e imprime a respectiva nota baseada nas condições
+
+## 3. else: Lidando com o Último Caso
+O bloco else é utilizado quando nenhuma das condições do if e elif é verdadeira.
+ Ele fornece uma alternativa quando as condições anteriores não foram atendidas:
+
+idade = 15
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")
+
+No caso acima, se a idade não for maior ou igual a 18, o bloco de código dentro do else será executado.
+
+## 4. or: Unindo Condições com Lógica
+O operador or permite combinar múltiplas condições em uma única expressão lógica. 
+Ele retorna True se pelo menos uma  das condições for verdadeira:
+
+idade = 25
+if idade < 18 or idade >= 65:
+    print("Você tem direito a algum benefício.")
+
+ o código verifica se a idade é inferior a 18 OU se é maior ou igual a 65 para conceder benefícios.
+
+
+## Em resumo, as estruturas condicionais em Python são ferramentas poderosas para 
+controlar o fluxo do programa com base em diferentes situações. Ao entender 
+como usar if, elif, else e or, você estará capacitado para criar programas mais
+flexíveis e capazes de lidar com uma variedade de cenários.
