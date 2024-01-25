@@ -11,7 +11,7 @@ idade = 18
 # faça a correção para ter o resultado esperado.
 if idade <= 10:
     print('infantil')
-elif idade < 18;
+elif idade < 18:
     print('juvenil')
 elif idade > 18 and idade < 40:
     print('adulto')
