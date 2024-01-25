@@ -1,4 +1,4 @@
-11mmmmmsg = 'Oi'
+12msg = 'Oi'
 
 print(msg)
 
