@@ -1,5 +1,6 @@
 import subprocess
 
+
 def abrir_editor(editor,arquivo):
     subprocess.run([editor,arquivo])
     input("Após a edição aperte ENTER para continuar.")
@@ -19,7 +20,7 @@ def verificar_resultado_do_desafio(resultado):
             #O codigo foi executado corretamente. Agora tem que verificar se a saida é o resultado esperado do desafio.
             
         case 1:
-            print("O codigo não rodou")
+            print("O codigo não rodou") 
             #O codigo não foi executado por erro do codigo 
             
         case _:
@@ -30,7 +31,7 @@ def verificar_resultado_do_desafio(resultado):
   
 # Exemplo de usa das funções acimas
             
-# abrir_editor('notepad.exe','desafios/desafio_declaração_de_variavel.py')
-# codigo_do_desafio = ler_arquivo_de_desafio("desafio_declaração_de_variavel.py")
-# resultado_do_codigo = executar_desafio('desafio_declaração_de_variavel.py')
-# verificar_resultado_do_desafio(resultado_do_codigo)
+abrir_editor('notepad.exe','desafios/desafio_condicional.py')
+codigo_do_desafio = ler_arquivo_de_desafio("desafio_condicional.py")
+resultado_do_codigo = executar_desafio('desafio_condicional.py')
+verificar_resultado_do_desafio(resultado_do_codigo)
