@@ -1,0 +1,26 @@
+Declaração de Variáveis em python
+
+Em Python, a declaração de variáveis é uma tarefa simples e flexível,
+mas existem algumas regras a serem seguidas. Neste artigo, vamos explorar detalhadamente como declarar variáveis em Python.
+
+1. Regras de Nomenclatura de Variáveis:
+Nomes de variáveis são case-sensitive: Em Python, maiúsculas e minúsculas são distintas.
+Portanto, variavel e Variavel seriam tratadas como duas variáveis diferentes.
+
+Começam com letras (a-z, A-Z) ou sublinhado (_): Um nome de variável pode começar com uma letra (maiúscula ou minúscula) ou com um sublinhado.
+Não pode começar com números ou caracteres especiais, exceto pelo sublinhado.
+
+Podem conter letras, números e sublinhados: "Após o primeiro caractere", um nome de variável pode conter letras (maiúsculas ou minúsculas), números e sublinhados.
+
+"Evite palavras reservadas: como if, else, for, while, etc. , pois elas têm significados especiais na linguagem."
+
+2. Declaração de Variáveis:
+Em Python, você pode declarar uma variável atribuindo um valor a ela. Veja alguns exemplos:
+
+
+# Declaração simples de variáveis
+
+idade = 25
+nome = "Alice"
+saldo = 1000.50
+ativo = True
