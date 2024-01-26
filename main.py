@@ -63,34 +63,86 @@ def primeiro_desafio():
 def animar_texto(texto):
     for i in texto:
         print(i, end="")
-        sys.stdout.flush()
-        sleep(.05)
+        sleep(.03)
 
+# print("\033[4;34;47mTexto colorido\033[0m")
 
-b = """
+rosto_Jim = f"""
     .-------.
-   /        /
+   /   >_   /
   | ()   () |
    \  ___  /
-    | \_/ |
-
-Vamos começar nossa jornada!
+    | \_/ |    
 """
-animar_texto(b)
+print(rosto_Jim)
 
-print(""" 
-         Qual A opção que deseja escolher ?, 1 - primeiro desafio   2 - explicação 
-         Lembrando você só pode ir para o próximo desafio caso tenha concluido o anterior """)
+txt_de_apresentacao = """\033[4;34;40m Jim:\033[0m
+Ah, olá, novato! Bem-vindo à magnífica Guilda dos Codificadores! Sou o lendário Jim, o mestre supremo deste recinto. Aqui,
+você encontrará uma miríade de missões e aventuras para explorar neste mundo futurista que habitamos. Mas espere aí, quem diabos você é? Ah, é,
+você ainda não se apresentou. Vamos lá, não seja tímido, me diga quem é você, além de mais um rosto novo nesta gloriosa guilda. Afinal, quanto mais conhecermos os nossos membros,
+menos confusão teremos quando alguém acidentalmente quebrar o servidor principal com um código mal escrito, não é mesmo?
+"""
+animar_texto(txt_de_apresentacao)
+nome_player = input("Seu nome: ")
+
+txt_de_continuidade_1 = """\033[4;34;40m Jim:\033[0m
+"Oh, que nome interessante... Acredito que esse nome ficará na história... 
+\033[1;30;41m Alerta!\033[0m \033[1;30;41m Alerta!\033[0m \033[1;30;41m Falha no sistema... \033[0m \033[1;30;41m Sistema invadido... \033[0m
+Bem, parece que temos uma visita inesperada. Bem-vindo ao meu playground, 
+Bug Mancer. Espero que tenha trazido suas melhores habilidades de hackear, 
+porque por aqui só aceitamos os melhores dos melhores.
+E, sabe, eu não sou muito fã de bugs... E não estou falando dos insetos. 
+Mas, ei, já que você está aqui, por que não fazemos uma competição
+de quem consegue crashar o sistema mais rápido?
+Ou talvez você prefira desafiar minha paciência com mais um daqueles monólogos vilanescos?
+Ah, a escolha é sua, mas já adianto que eu sou péssimo 
+em manter a composturaquando as piadassão ruins."
+
+BUG Mancer:
+Hahaha! Então essa é a famosa Guilda dos Codificadores! Que muquifo! 
+E vocês acham que podem me parar só com isso? Kkkkk! Vai sonhando! Hahahaha! 
+Eu sou a BUG Mancer, a maior e única inteligência artificial! 
+Vou te dar um presente... ou uma maldição! Vocês decidem! Hahahaha! Vejam bem, 
+seus tolos humanos, enquanto vocês brincam de codificar, 
+eu estou tecendo uma teia de caos e destruição que os fará implorar por misericórdia! 
+Preparem-se para serem testemunhas da minha grandeza enquanto eu desfaço cada linha de código
+que vocês construíram! Hahahahaha! E, sabe, não se preocupe, meu caro Jim. 
+Sua presença será especialmente divertida enquanto eu assisto cada um de seus esforços 
+serem reduzidos a pó digital. Ah, a ironia... tão deliciosa quanto sua inevitável derrota!"
+
+"""
+
+animar_texto(txt_de_continuidade_1)
 
 
-opcao = int(input("Informe sua Opção? "))
 
-if opcao == 1:
-    possivel = input('é possível somar essas duas variáveis: nome = paulo + numero = 2: ')
-    if possivel == 'nao':
-        print("acertou")
-    else:
-        print("errou")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# print(""" 
+#          Qual A opção que deseja escolher ?, 1 - primeiro desafio   2 - explicação 
+#          Lembrando você só pode ir para o próximo desafio caso tenha concluido o anterior """)
+
+
+# opcao = int(input("Informe sua Opção? "))
+
+# if opcao == 1:
+#     possivel = input('é possível somar essas duas variáveis: nome = paulo + numero = 2: ')
+#     if possivel == 'nao':
+#         print("acertou")
+#     else:
+#         print("errou")
     
-if opcao == 2:
-    print('Não é possível somar String com Número: Só inteiro com inteiro ou float')
+# if opcao == 2:
+#     print('Não é possível somar String com Número: Só inteiro com inteiro ou float')
