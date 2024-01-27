@@ -1,0 +1,39 @@
+## Laços de Repetição em Programação
+
+## O que são Laços de Repetição?
+Laços de repetição, também conhecidos como loops, são estruturas fundamentais na programação 
+que permitem executar um bloco de código várias vezes. Eles são úteis para automatizar tarefas
+repetitivas e facilitar a manipulação de dados.
+
+## Tipos de Laços de Repetição:
+   Existem dois tipos principais de laços de repetição: o for e o while.
+
+## For:
+Utilizado quando o número de iterações é conhecido antecipadamente.
+Exemplo em Python:
+
+for i in range(5):  # Itera 5 vezes
+    print("Iteração", i+1)
+
+## While:
+Utilizado quando a condição de parada não é conhecida antecipadamente.
+Exemplo em Python:
+contador = 0
+
+while contador < 5:  # Continua enquanto a condição for verdadeira
+    print("Iteração", contador+1)
+    contador += 1
+
+## Uso de Laços com Arquivos de Texto:
+Imagine que você tem um arquivo de texto chamado exemplo.txt com o seguinte conteúdo:
+Linha 1
+Linha 2
+Linha 3
+
+Para ler e imprimir cada linha do arquivo em Python, você pode usar um laço for da seguinte forma:
+
+# Abre o arquivo em modo de leitura
+with open('exemplo.txt', 'r') as arquivo:
+    # Itera sobre cada linha do arquivo
+    for linha in arquivo:
+        print(linha.strip())  # strip() remove espaços em branco extras e quebras de linha
