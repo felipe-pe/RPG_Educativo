@@ -1,0 +1,49 @@
+Os laços de repetição, também conhecidos como loops, são comandos que permitem iteração de código, ou seja, que comandos de um bloco sejam repetidos diversas vezes.
+
+For
+O comando for ("para" em tradução literal para o português), permite que uma variável seja testada e incrementada a cada iteração. É o comando de laço de repetição mais utilizado, e só pode ser usado com um contador.
+
+Por exemplo: for variavel in sequencia:
+
+'variavel' é uma variável que assume o valor de cada item na sequência em cada iteração.
+'sequencia' é a sequência de itens sobre a qual deseja iterar.
+
+Observe:
+
+frutas = ["maça", "banana", "laranja"]
+
+for fruta in frutas:
+    print(fruta)
+
+Neste exemplo, o bloco de código dentro do for será executado três vezes, uma vez para cada fruta na lista. A saída será:
+
+maça
+banana
+laranja
+
+Além disso, você pode usar a função range() para gerar uma sequência de números em uma faixa específica.
+
+for i in range(5):
+    print(i)
+
+Este código imprimirá os números de 0 a 4, pois pot padrão a função range() inicia em 0 e vai incrementando de 1 em 1 até o valor determinado. Sendo assim, range(5) gera uma sequência de números de 0 a 4.
+
+Também, é possível adicionar outras opções, parâmetros, na função range().
+
+• Iniciar por outro valor que não seja 0: range(2, 10) começa no número 2 e para quando chegar em 10, incremento em 1;
+• Mudar o incrementador: range(0, 10, 2) começa no número 0 e para quando chega em 10, porém, com o incrementador de 2 em 2;
+• Redução e não incremento: range(10, 0, -1) começa a partir do 10 e para quando chega em 0, reduzindo de 1 em 1.
+
+
+While
+O comando while ("enquanto" em tradução literal para o português), é mais genérico e permite outros tipos de repetição. Enquanto uma detarminada condição for verdadeira, o bloco será executado. Esse laço testa a condição antes de executar o código, sendo assim, caso a condição seja falsa, o bloco não é executado.
+
+Observe:
+
+senha = 1
+while senha <= 10:
+      print("Próximo da fila: " + str(senha))
+      senha += 1
+
+No exemplo acima, o comando é repetido até que todas as 10 senhas sejam chamadas.
+Definimos que a senha inicia em 1 e o código será rodado até que seja menor ou igual a 10.
