@@ -120,37 +120,140 @@ não brincar com nossos códigos ainda,vai que dá ruim, né?(risos macabros)
 Depois de riscar as cinco tarefas do rank zero, vem o momento da verdade: uma prova para testar se você não é apenas mais 
 um desperdício de espaço. Se passar, oficializaremos sua entrada na guilda.
 Mas olha, não se empolga muito, a vida de membro aqui é um misto de sobrevivência e desespero. 
-Agora, dá uma olhada nas missões antes que eu mude de ideia.
+Agora, vamos começar sua prova antes que eu mude de ideia.
 
 """
 
 animar_texto(txt_de_continuidade_1)
 
-
-
-
-
-
-
-
-
-
-
-
-
-# print(""" 
-#          Qual A opção que deseja escolher ?, 1 - primeiro desafio   2 - explicação 
-#          Lembrando você só pode ir para o próximo desafio caso tenha concluido o anterior """)
-
-
-# opcao = int(input("Informe sua Opção? "))
-
-# if opcao == 1:
-#     possivel = input('é possível somar essas duas variáveis: nome = paulo + numero = 2: ')
-#     if possivel == 'nao':
-#         print("acertou")
-#     else:
-#         print("errou")
+#pergunta1
+print("""
+    Questão 1:
+    Dado o codigo a seguir qual sera sua saida?
     
-# if opcao == 2:
-#     print('Não é possível somar String com Número: Só inteiro com inteiro ou float')
+    idade = 18
+    if idade <= 10:
+        print('infantil')
+    elif idade < 18:
+        print('juvenil')
+    elif idade > 18 and idade < 40:
+        print('adulto')
+    else:
+        print('veterano')
+        
+        
+    [A] - Infantil
+    [B] - Juvenil
+    [C] - Adulto
+    [D] - Veterano
+
+""")
+
+
+#pergunta2 
+print("""
+    Questão 2
+    Preencha os espaços em branco:
+
+    Python fornece um tipo de dados booleano. Objetos do tipo booleano podem ter um 
+    de dois valores,_______ ou ________.
+    
+    [A] - Verdadeiro, Falso
+    [B] - Sim, Não
+    [C] - True, False
+    [D] - True, Not
+""")
+
+
+#pergunta3 
+print("""
+    Questão 3
+    Analisando o codigo a seguir qual sera sua saida
+
+    def escrever_multiplicacao (numero1, numero2):
+        produto = numero1 * numero2
+        expressao = f"{numero1} x {numero2} = {produto}"
+        return expressao
+
+    tabuada_do_oito = 1
+
+    while tabuada_do_oito <= 10:
+    mensagem = escrever_multiplicacao(8, tabuada_do_oito)
+    print(mensagem)
+    tabuada_do_oito += 1
+    
+    [A] - A tabuada do 8 inteira
+    [B] - 8 x 1 = 8 repetidamente
+    [C] - Erro
+    [D] - None
+""")
+
+#pergunta4 
+print("""
+    Questão 4
+
+    Qual é a função do seguinte código em Python?
+
+    print("Hello, World!")
+
+    [A] Definir o valor da variável print como "Hello, World!"
+    [B] Exibir na tela do usuário a mensagem "Hello, World!"
+    [C] É um valor que o usuário digitou quando perguntado
+    [D] É o nome do arquivo que está sendo utilizado
+
+""")
+
+
+#pergunta5 
+print("""
+    Questão 5:
+
+    O que o seguinte código Python faz?
+
+    frutas = ["maçã", "banana", "laranja"]
+    for fruta in frutas:
+        print(fruta)
+
+    [A] Define uma função chamada 'frutas' que imprime o nome de cada fruta
+    [B] ria uma lista chamada frutas e imprime cada fruta nela
+    [C] Gera um erro, pois a indentação está incorreta
+    [D] Define uma função chamada print para imprimir frutas
+
+""")
+
+#Pergunta 6
+print("""
+    Questão 6:
+
+    Como você verifica se uma variável chamada idade é igual a 18 em Python?
+
+    [A] idade == 18
+    [B] idade = 18
+    [C] idade.equals(18)
+    [D] idade !== 18
+""")
+
+#Pergunta 7
+print("""
+    Pergunta 7:
+
+    O que o operador % faz em Python?
+
+    [A] Divide dois números
+    [B] Calcula o módulo, ou seja, o resto da divisão
+    [C] Multiplica dois números
+    [D] Eleva um número à potência de outro
+
+    """)
+
+#Pergunta 8
+
+
+#Pergunta 9
+
+
+#Pergunta 10
+
+
+
+
