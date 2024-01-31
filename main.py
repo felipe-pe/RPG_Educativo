@@ -110,13 +110,22 @@ que vocês construíram! Hahahahaha! E, sabe, não se preocupe, meu caro Jim.
 Sua presença será especialmente divertida enquanto eu assisto cada um de seus esforços 
 serem reduzidos a pó digital. Ah, a ironia... tão deliciosa quanto sua inevitável derrota!"
 
+\033[1;30;44m Sistema Restaurado!\033[0m
+
+\033[4;34;40m Jim:\033[0m
+
+Bom, agora que ela já se mandou para o além, vamos diretoao ponto: sua primeira missão de ranqueamento.
+Olha só o quadro de missões aqui. Você está no rank zero, então é melhor
+não brincar com nossos códigos ainda,vai que dá ruim, né?(risos macabros)
+Depois de riscar as cinco tarefas do rank zero, vem o momento da verdade: uma prova para testar se você não é apenas mais 
+um desperdício de espaço. Se passar, oficializaremos sua entrada na guilda.
+Mas olha, não se empolga muito, a vida de membro aqui é um misto de sobrevivência e desespero. 
+Agora, dá uma olhada nas missões antes que eu mude de ideia.
+
+
 """
 
 animar_texto(txt_de_continuidade_1)
-
-
-
-
 
 
 
