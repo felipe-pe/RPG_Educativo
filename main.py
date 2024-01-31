@@ -196,10 +196,10 @@ print("""
 
     print("Hello, World!")
 
-    [A] Definir o valor da variável print como "Hello, World!"
-    [B] Exibir na tela do usuário a mensagem "Hello, World!"
-    [C] É um valor que o usuário digitou quando perguntado
-    [D] É o nome do arquivo que está sendo utilizado
+    [A] - Definir o valor da variável print como "Hello, World!"
+    [B] - Exibir na tela do usuário a mensagem "Hello, World!"
+    [C] - É um valor que o usuário digitou quando perguntado
+    [D] - É o nome do arquivo que está sendo utilizado
 
 """)
 
@@ -214,10 +214,10 @@ print("""
     for fruta in frutas:
         print(fruta)
 
-    [A] Define uma função chamada 'frutas' que imprime o nome de cada fruta
-    [B] ria uma lista chamada frutas e imprime cada fruta nela
-    [C] Gera um erro, pois a indentação está incorreta
-    [D] Define uma função chamada print para imprimir frutas
+    [A] - Define uma função chamada 'frutas' que imprime o nome de cada fruta
+    [B] - Cria uma lista chamada frutas e imprime cada fruta nela
+    [C] - Gera um erro, pois a indentação está incorreta
+    [D] - Define uma função chamada print para imprimir frutas
 
 """)
 
@@ -227,10 +227,10 @@ print("""
 
     Como você verifica se uma variável chamada idade é igual a 18 em Python?
 
-    [A] idade == 18
-    [B] idade = 18
-    [C] idade.equals(18)
-    [D] idade !== 18
+    [A] - idade == 18
+    [B] - idade = 18
+    [C] - idade.equals(18)
+    [D] - idade !== 18
 """)
 
 #Pergunta 7
@@ -239,21 +239,51 @@ print("""
 
     O que o operador % faz em Python?
 
-    [A] Divide dois números
-    [B] Calcula o módulo, ou seja, o resto da divisão
-    [C] Multiplica dois números
-    [D] Eleva um número à potência de outro
+    [A] - Divide dois números
+    [B] - Calcula o módulo, ou seja, o resto da divisão
+    [C] - Multiplica dois números
+    [D] - Eleva um número à potência de outro
 
     """)
 
 #Pergunta 8
+print("""
+    Pergunta 8:
 
+    O que o seguinte código Python faz?
+      
+    for i in range(3, 8, 2):
+      print(i)
+
+    [A] - Imprime os números 3, 8 e 2
+    [B] - Imprime os números 3, 5 e 7
+    [C] - Imprime os números de 3 a 8
+    [D] - Imprime os números 3, 4, 5, 6, 7, 8
+
+    """)
 
 #Pergunta 9
+print("""
+    Pergunta 9:
 
+    Qual é a função da instrução 'else' em um bloco 'if' em Python?
+      
+    [A] - É executada se a condição do 'if' for verdadeira
+    [B] - É opcional e não tem função específica
+    [C] - É executada se a condição do 'if' for falsa
+    [D] - É o fechamento da estrutura if
+
+    """)
 
 #Pergunta 10
+print("""
+    Pergunta 10:
 
+    Como se solicita a entrada de um dado vindo do usuário em Python?
+      
+    [A] - input()
+    [B] - read()
+    [C] - user_input()
+    [D] - get_user_input()
 
-
-
+    """)
