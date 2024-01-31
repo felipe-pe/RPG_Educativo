@@ -54,10 +54,10 @@ import sys
 
 
 
-def primeiro_desafio():
-    print("corrigir o erro na declaração da variável")
-    nome = 'paulo'
-    numero = 2
+# def primeiro_desafio():
+#     print("corrigir o erro na declaração da variável")
+#     nome = 'paulo'
+#     numero = 2
 
 
 def animar_texto(texto):
@@ -121,7 +121,6 @@ Depois de riscar as cinco tarefas do rank zero, vem o momento da verdade: uma pr
 um desperdício de espaço. Se passar, oficializaremos sua entrada na guilda.
 Mas olha, não se empolga muito, a vida de membro aqui é um misto de sobrevivência e desespero. 
 Agora, dá uma olhada nas missões antes que eu mude de ideia.
-
 
 """
 
