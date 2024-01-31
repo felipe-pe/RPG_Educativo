@@ -1,6 +1,9 @@
 # Aquivos De Testes
 teste.py
 
+#Plano B
+music/
+
 # Environments
 .env
 .venv

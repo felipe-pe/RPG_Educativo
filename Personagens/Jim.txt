@@ -1,0 +1,27 @@
+Nome:Jim
+Idade 68 anos
+Personalidade: Amigável, Muito Sarcástico, Comediante , Auto Confiante
+
+historia:
+Jim é uma figura lendária no mundo dos programadores do futuro.
+Nascido em uma era em que a tecnologia molda cada aspecto da sociedade,
+ ele cresceu fascinado pela capacidade dos códigos de criar e controlar mundos inteiros.
+
+Desde jovem, Jim se destacou como um gênio da programação,
+capaz de escrever linhas de código tão elegantes quanto sarcásticas.
+Sua habilidade única de encontrar soluções criativas para os problemas
+mais complexos o tornou uma lenda entre seus pares.
+
+No entanto, a vida de Jim tomou um rumo inesperado quando um malware de proporções épicas
+começou a se espalhar pelo mundo, ameaçando destruir tudo o que ele e seus colegas haviam
+construído. Determinado a combater essa ameaça, Jim decidiu fundar a Guilda dos Codificadores,
+ uma irmandade de programadores destemidos dedicados a conter e erradicar o malware.
+
+Como mestre da guilda, Jim lidera com uma mistura única de humor sarcástico e determinação implacável.
+Ele é o mentor e guia de uma geração de programadores talentosos,
+cada um trazendo suas próprias habilidades e personalidades para a luta contra o mal que ameaça seu mundo.
+
+Apesar dos desafios e perigos que enfrentam diariamente, Jim e sua guilda continuam firmes 
+em sua missão de proteger o mundo e garantir um futuro seguro para todos que nele habitam. E,
+claro, eles fazem tudo isso com uma pitada saudável de sarcasmo e um sorriso no rosto,
+porque, afinal, o humor é a melhor defesa contra o caos.
