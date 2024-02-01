@@ -129,7 +129,7 @@ animar_texto(txt_de_continuidade_1)
 #pergunta1
 print("""
     Questão 1:
-    Dado o codigo a seguir qual sera sua saida?
+    Dado o código a seguir, qual será a sua saída?
     
     idade = 18
     if idade <= 10:
@@ -155,7 +155,7 @@ print("""
     Questão 2
     Preencha os espaços em branco:
 
-    Python fornece um tipo de dados booleano. Objetos do tipo booleano podem ter um 
+    Python fornece um tipo de dado booleano. Objetos do tipo booleano podem ter um 
     de dois valores,_______ ou ________.
     
     [A] - Verdadeiro, Falso
@@ -168,7 +168,7 @@ print("""
 #pergunta3 
 print("""
     Questão 3
-    Analisando o codigo a seguir qual sera sua saida
+    Analisando o código a seguir, qual será a sua saida?
 
     def escrever_multiplicacao (numero1, numero2):
         produto = numero1 * numero2
@@ -178,9 +178,9 @@ print("""
     tabuada_do_oito = 1
 
     while tabuada_do_oito <= 10:
-    mensagem = escrever_multiplicacao(8, tabuada_do_oito)
-    print(mensagem)
-    tabuada_do_oito += 1
+      mensagem = escrever_multiplicacao(8, tabuada_do_oito)
+      print(mensagem)
+      tabuada_do_oito += 1
     
     [A] - A tabuada do 8 inteira
     [B] - 8 x 1 = 8 repetidamente
