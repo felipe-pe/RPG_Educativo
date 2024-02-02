@@ -27,14 +27,13 @@ def verificar_resultado_do_desafio(resultado):
             ...
             #Erros inesperados
             
-  
-  
+
+
+
+
 # Exemplo de usa das funções acimas
-try:
-    abrir_editor('code','desafios/desafio_declaração_de_variavel.py')
-except:
-    abrir_editor('notepad.exe','desafios/desafio_declaração_de_variavel.py')
-    
-codigo_do_desafio = ler_arquivo_de_desafio("desafio_declaração_de_variavel.py")
-resultado_do_codigo = executar_desafio('desafio_declaração_de_variavel.py')
+
+abrir_editor(editor='notepad.exe',arquivo='condicional/desafio_condicional01.py')
+codigo_do_desafio = ler_arquivo_de_desafio("condicional/desafio_condicional01.py")
+resultado_do_codigo = executar_desafio('condicional/desafio_condicional01.py')
 verificar_resultado_do_desafio(resultado_do_codigo)
