@@ -117,14 +117,16 @@ serem reduzidos a pó digital. Ah, a ironia... tão deliciosa quanto sua inevit�
 Bom, agora que ela já se mandou para o além, vamos diretoao ponto: sua primeira missão de ranqueamento.
 Olha só o quadro de missões aqui. Você está no rank zero, então é melhor
 não brincar com nossos códigos ainda,vai que dá ruim, né?(risos macabros)
-Depois de riscar as cinco tarefas do rank zero, vem o momento da verdade: uma prova para testar se você não é apenas mais 
+Depois de riscar as dez tarefas do rank zero, vem o momento da verdade: uma prova para testar se você não é apenas mais 
 um desperdício de espaço. Se passar, oficializaremos sua entrada na guilda.
 Mas olha, não se empolga muito, a vida de membro aqui é um misto de sobrevivência e desespero. 
-Agora, vamos começar sua prova antes que eu mude de ideia.
+Agora, vamos começar sua prova antes que eu mude de ideia e lembre \033[1;30;41m qualquer tentativa de comédia na prova resultará em questões descansando eternamente no limbo das anulações..\033[0m
 
 """
 
 animar_texto(txt_de_continuidade_1)
+
+nota_da_prova = 0
 
 #pergunta1
 print("""
@@ -148,7 +150,9 @@ print("""
     [D] - Veterano
 
 """)
-
+questao_1 = input("Digite sua resposta: ")
+if questao_1.upper() == "D":
+    nota_da_prova += 1
 
 #pergunta2 
 print("""
@@ -163,7 +167,9 @@ print("""
     [C] - True, False
     [D] - True, Not
 """)
-
+questao_2 = input("Digite sua resposta: ")
+if questao_2.upper() == "C":
+    nota_da_prova += 1
 
 #pergunta3 
 print("""
@@ -187,6 +193,9 @@ print("""
     [C] - Erro
     [D] - None
 """)
+questao_3 = input("Digite sua resposta: ")
+if questao_3.upper() == "A":
+    nota_da_prova += 1
 
 #pergunta4 
 print("""
@@ -202,7 +211,9 @@ print("""
     [D] - É o nome do arquivo que está sendo utilizado
 
 """)
-
+questao_4 = input("Digite sua resposta: ")
+if questao_4.upper() == "B":
+    nota_da_prova += 1
 
 #pergunta5 
 print("""
@@ -220,6 +231,9 @@ print("""
     [D] - Define uma função chamada print para imprimir frutas
 
 """)
+questao_5 = input("Digite sua resposta: ")
+if questao_5.upper() == "B":
+    nota_da_prova += 1
 
 #Pergunta 6
 print("""
@@ -232,7 +246,10 @@ print("""
     [C] - idade.equals(18)
     [D] - idade !== 18
 """)
-
+questao_6 = input("Digite sua resposta: ")
+if questao_6.upper() == "A":
+    nota_da_prova += 1
+    
 #Pergunta 7
 print("""
     Pergunta 7:
@@ -245,15 +262,17 @@ print("""
     [D] - Eleva um número à potência de outro
 
     """)
-
+questao_7 = input("Digite sua resposta: ")
+if questao_7.upper() == "D":
+    nota_da_prova += 1
 #Pergunta 8
 print("""
     Pergunta 8:
 
     O que o seguinte código Python faz?
-      
+
     for i in range(3, 8, 2):
-      print(i)
+        print(i)
 
     [A] - Imprime os números 3, 8 e 2
     [B] - Imprime os números 3, 5 e 7
@@ -261,13 +280,15 @@ print("""
     [D] - Imprime os números 3, 4, 5, 6, 7, 8
 
     """)
-
+questao_8 = input("Digite sua resposta: ")
+if questao_8.upper() == "B":
+    nota_da_prova += 1
 #Pergunta 9
 print("""
     Pergunta 9:
 
     Qual é a função da instrução 'else' em um bloco 'if' em Python?
-      
+
     [A] - É executada se a condição do 'if' for verdadeira
     [B] - É opcional e não tem função específica
     [C] - É executada se a condição do 'if' for falsa
@@ -275,15 +296,149 @@ print("""
 
     """)
 
+questao_9 = input("Digite sua resposta: ")
+if questao_9.upper() == "C":
+    nota_da_prova += 1
+    
+    
+
 #Pergunta 10
 print("""
     Pergunta 10:
 
     Como se solicita a entrada de um dado vindo do usuário em Python?
-      
+
     [A] - input()
     [B] - read()
     [C] - user_input()
     [D] - get_user_input()
 
     """)
+
+questao_10 = input("Digite sua resposta: ")
+if questao_10.upper() == "A":
+    nota_da_prova += 1
+    
+
+print("""\033[4;34;40m Jim:\033[0m
+Hmm, então vamos ver como você se saiu. Será que é apenas mais um aspirante a programador 
+de meia dúzia de meses ou se realmente tem o que é preciso para entrar nessa grandiosa guilda dos codificadores?
+""")
+
+passou_na_prova = True if nota_da_prova >= 6 else False
+
+if not passou_na_prova:
+    print("""
+    Ah, então você não conseguiu nem responder uma prova tão pífia. Normalmente, 
+    eu te chutaria logo para fora desta guilda; você não é digno de estar aqui. 
+    Mas como recebemos uma visita inesperada, quero ver o que o destino reserva para nós. 
+    Vá revisar sua prova naquele cantinho ali da sala e, quando aprender que programação 
+    não é brincadeira, volte e tente novamente.
+
+    Enfim, aqui está a explicação de cada questão da prova
+
+""")
+#colocar as explicação das alternativas que errou
+    if questao_1.upper() != "D":
+        print("""
+        ---------------------------------
+        Questão 1 
+        ---------------------------------
+        O código apresenta uma estrutura condicional (if, elif, else) que avalia a variável 'idade' 
+        e imprime uma categoria com base nas condições fornecidas. Vamos analisar as condições:
+
+        • Se a idade for menor ou igual a 10, imprime 'infantil';
+        • Se a idade for maior que 10 e menor que 18, imprime 'juvenil';
+        • Se a idade for maior que 18 e menor que 40, imprime 'adulto';
+        • Se nenhuma das condições anteriores for atendida, imprime 'veterano'. 
+
+    """)
+    if questao_2.upper() != "C":
+        print("""
+        ---------------------------------
+        Questão 2
+        ---------------------------------
+        
+        Python fornece um tipo de dado booleano que pode ter um desses dois valores: 
+        True (Verdadeiro) ou False (Falso). Os valores booleanos são frequentemente usados 
+        em expressões condicionais e em lógica de programação.
+    """)
+    if questao_3.upper() != "A":
+        print("""
+        ---------------------------------
+        Questão 3
+        ---------------------------------
+        O código fornece a tabuada do 8 de 1 a 10 usando uma função chamada escrever_multiplicacao. 
+        Essa função recebe dois números como argumentos, calcula o produto e retorna uma string 
+        formatada contendo a expressão da multiplicação.
+
+        O loop 'while' é usado para iterar sobre os números de 1 a 10, chamando a função 
+        escrever_multiplicacao e imprimindo cada expressão de multiplicação.
+    """)
+    if questao_4.upper() != "B":
+        print("""
+        ---------------------------------
+        Questão 4
+        ---------------------------------
+        O comando print() é utilizado para imprimir informações na saída padrão, 
+        que geralmente é a tela do computador do usuário.
+    """)
+    if questao_5.upper() != "B":
+        print("""
+        ---------------------------------
+        Questão 5
+        ---------------------------------
+        O código cria uma lista chamada frutas que contém três strings ("maçã", "banana", "laranja"). 
+        Em seguida, ele utiliza um loop for para iterar sobre cada elemento da lista frutas e imprime 
+        cada fruta na tela.
+    """)
+    if questao_6.upper() != "A":
+        print("""
+        ---------------------------------
+        Questão 6
+        ---------------------------------
+        '==' é o operador de igualdade em Python. Sendo assim, esse operador compara um dado valor 
+        com o o valor atribuído na variável 'idade'.
+    """)
+    if questao_7.upper() != "D":
+        print("""
+        ---------------------------------
+        Questão 7
+        ---------------------------------
+        O operador % em Python realiza a operação de módulo, ou seja, 
+        retorna o resto da divisão entre dois números.
+    """)
+    if questao_8.upper() != "B":
+        print("""
+        ---------------------------------
+        Questão 8
+        ---------------------------------
+        A função range(3, 8, 2),  gera uma sequência de números começando em 3, 
+        indo até (mas não incluindo) 8, com um passo de 2. Em seguida, 
+        o loop for itera sobre essa sequência e imprime cada número.
+    """)
+    if questao_9.upper() != "C":
+        print("""
+        ---------------------------------
+        Questão 9
+        ---------------------------------
+        A instrução 'else' em um bloco 'if' em Python é executada se a condição do 'if' for falsa.
+    """)
+    if questao_10.upper() != "A":
+        print("""
+        ---------------------------------
+        Questão 10
+        ---------------------------------
+        Em Python, a função utilizada para solicitar a entrada de um dado do usuário é input().
+    """)
+
+else:
+    print("""
+    Hahaha, nem tão inútil assim, pelo visto! Conseguiu passar nessa provinha que eu mesmo inventei. 
+    Parabéns, agora você é oficialmente parte dessa grandiosa guilda. Incrível, né? 
+    Haha, pode rir ou chorar, tanto faz. Bom, como membro oficial, você tem o 'privilégio' de acessar 
+    o quadro de missões e seu ranking atual é o sublime rank 1.
+    
+    Fim do Ato 0 - Introdução"
+""")
+
