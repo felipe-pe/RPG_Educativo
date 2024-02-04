@@ -1,7 +1,83 @@
 from time import sleep
 import sys
+#variaveis globais
 
+rosto_Jim = f"""
 
+    .-------.
+   /   >_   /
+  | ()   () |
+   \  ___  /
+    | \_/ |    
+"""
+txt_de_apresentacao = """\033[4;34;40m Jim:\033[0m
+Ah, olá, novato! Bem-vindo à magnífica Guilda dos Codificadores! Sou o lendário Jim, o mestre supremo deste recinto. Aqui,
+você encontrará uma miríade de missões e aventuras para explorar neste mundo futurista que habitamos. Mas espere aí, quem diabos você é? Ah, é,
+você ainda não se apresentou. Vamos lá, não seja tímido, me diga quem é você, além de mais um rosto novo nesta gloriosa guilda. Afinal, quanto mais conhecermos os nossos membros,
+menos confusão teremos quando alguém acidentalmente quebrar o servidor principal com um código mal escrito, não é mesmo?
+"""
+txt_de_continuidade_1 = """\033[4;34;40m Jim:\033[0m
+"Oh, que nome interessante... Acredito que esse nome ficará na história... 
+\033[1;30;41m Alerta!\033[0m \033[1;30;41m Alerta!\033[0m \033[1;30;41m Falha no sistema... \033[0m \033[1;30;41m Sistema invadido... \033[0m
+Bem, parece que temos uma visita inesperada. Bem-vindo ao meu playground, 
+Bug Mancer. Espero que tenha trazido suas melhores habilidades de hackear, 
+porque por aqui só aceitamos os melhores dos melhores.
+E, sabe, eu não sou muito fã de bugs... E não estou falando dos insetos. 
+Mas, ei, já que você está aqui, por que não fazemos uma competição
+de quem consegue crashar o sistema mais rápido?
+Ou talvez você prefira desafiar minha paciência com mais um daqueles monólogos vilanescos?
+Ah, a escolha é sua, mas já adianto que eu sou péssimo 
+em manter a composturaquando as piadassão ruins."
+
+BUG Mancer:
+Hahaha! Então essa é a famosa Guilda dos Codificadores! Que muquifo! 
+E vocês acham que podem me parar só com isso? Kkkkk! Vai sonhando! Hahahaha! 
+Eu sou a BUG Mancer, a maior e única inteligência artificial! 
+Vou te dar um presente... ou uma maldição! Vocês decidem! Hahahaha! Vejam bem, 
+seus tolos humanos, enquanto vocês brincam de codificar, 
+eu estou tecendo uma teia de caos e destruição que os fará implorar por misericórdia! 
+Preparem-se para serem testemunhas da minha grandeza enquanto eu desfaço cada linha de código
+que vocês construíram! Hahahahaha! E, sabe, não se preocupe, meu caro Jim. 
+Sua presença será especialmente divertida enquanto eu assisto cada um de seus esforços 
+serem reduzidos a pó digital. Ah, a ironia... tão deliciosa quanto sua inevitável derrota!"
+
+\033[1;30;44m Sistema Restaurado!\033[0m
+
+\033[4;34;40m Jim:\033[0m
+
+Bom, agora que ela já se mandou para o além, vamos diretoao ponto: sua primeira missão de ranqueamento.
+Olha só o quadro de missões aqui. Você está no rank zero, então é melhor
+não brincar com nossos códigos ainda,vai que dá ruim, né?(risos macabros)
+Depois de riscar as dez tarefas do rank zero, vem o momento da verdade: uma prova para testar se você não é apenas mais 
+um desperdício de espaço. Se passar, oficializaremos sua entrada na guilda.
+Mas olha, não se empolga muito, a vida de membro aqui é um misto de sobrevivência e desespero. 
+Agora, vamos começar sua prova antes que eu mude de ideia e lembre \033[1;30;41m qualquer tentativa de comédia na prova resultará em questões descansando eternamente no limbo das anulações.\033[0m
+
+"""
+fala_que_vai_verificar_a_prova = """\033[4;34;40m Jim:\033[0m
+
+Hmm, então vamos ver como você se saiu. Será que é apenas mais um aspirante a programador 
+de meia dúzia de meses ou se realmente tem o que é preciso para entrar nessa grandiosa guilda dos codificadores?
+"""
+texto_passou_na_prova = """
+Ah, então você não conseguiu nem responder uma prova tão pífia. Normalmente, 
+eu te chutaria logo para fora desta guilda; você não é digno de estar aqui. 
+Mas como recebemos uma visita inesperada, quero ver o que o destino reserva para nós. 
+Vá revisar sua prova naquele cantinho ali da sala e, quando aprender que programação 
+não é brincadeira, volte e tente novamente.
+
+Enfim, aqui está a explicação de cada questão da prova
+    
+"""
+texto_reprovou_na_prova = """
+Hahaha, nem tão inútil assim, pelo visto! Conseguiu passar nessa provinha que eu mesmo inventei. 
+Parabéns, agora você é oficialmente parte dessa grandiosa guilda. Incrível, né? 
+Haha, pode rir ou chorar, tanto faz. Bom, como membro oficial, você tem o 'privilégio' de acessar 
+o quadro de missões e seu ranking atual é o sublime rank 1.
+
+Fim do Ato 0 - Introdução"
+    """
+nota_da_prova = 0
 
 """
     Título: CodeQuest
@@ -50,86 +126,20 @@ import sys
     reconhecido pela Guilda e pelos habitantes do ecossistema digital.
 """
 
-
-
-
-
-# def primeiro_desafio():
-#     print("corrigir o erro na declaração da variável")
-#     nome = 'paulo'
-#     numero = 2
-
-
 def animar_texto(texto):
     for i in texto:
         print(i, end="")
-        
+        sys.stdout.flush()
         sleep(.03)
         
-animar_texto("ola mundo")
-
-# print("\033[4;34;47mTexto colorido\033[0m")
-
-rosto_Jim = f"""
-    .-------.
-   /   >_   /
-  | ()   () |
-   \  ___  /
-    | \_/ |    
-"""
 print(rosto_Jim)
 
-txt_de_apresentacao = """\033[4;34;40m Jim:\033[0m
-Ah, olá, novato! Bem-vindo à magnífica Guilda dos Codificadores! Sou o lendário Jim, o mestre supremo deste recinto. Aqui,
-você encontrará uma miríade de missões e aventuras para explorar neste mundo futurista que habitamos. Mas espere aí, quem diabos você é? Ah, é,
-você ainda não se apresentou. Vamos lá, não seja tímido, me diga quem é você, além de mais um rosto novo nesta gloriosa guilda. Afinal, quanto mais conhecermos os nossos membros,
-menos confusão teremos quando alguém acidentalmente quebrar o servidor principal com um código mal escrito, não é mesmo?
-"""
+
 animar_texto(txt_de_apresentacao)
 nome_player = input("Seu nome: ")
 
-txt_de_continuidade_1 = """\033[4;34;40m Jim:\033[0m
-"Oh, que nome interessante... Acredito que esse nome ficará na história... 
-\033[1;30;41m Alerta!\033[0m \033[1;30;41m Alerta!\033[0m \033[1;30;41m Falha no sistema... \033[0m \033[1;30;41m Sistema invadido... \033[0m
-Bem, parece que temos uma visita inesperada. Bem-vindo ao meu playground, 
-Bug Mancer. Espero que tenha trazido suas melhores habilidades de hackear, 
-porque por aqui só aceitamos os melhores dos melhores.
-E, sabe, eu não sou muito fã de bugs... E não estou falando dos insetos. 
-Mas, ei, já que você está aqui, por que não fazemos uma competição
-de quem consegue crashar o sistema mais rápido?
-Ou talvez você prefira desafiar minha paciência com mais um daqueles monólogos vilanescos?
-Ah, a escolha é sua, mas já adianto que eu sou péssimo 
-em manter a composturaquando as piadassão ruins."
-
-BUG Mancer:
-Hahaha! Então essa é a famosa Guilda dos Codificadores! Que muquifo! 
-E vocês acham que podem me parar só com isso? Kkkkk! Vai sonhando! Hahahaha! 
-Eu sou a BUG Mancer, a maior e única inteligência artificial! 
-Vou te dar um presente... ou uma maldição! Vocês decidem! Hahahaha! Vejam bem, 
-seus tolos humanos, enquanto vocês brincam de codificar, 
-eu estou tecendo uma teia de caos e destruição que os fará implorar por misericórdia! 
-Preparem-se para serem testemunhas da minha grandeza enquanto eu desfaço cada linha de código
-que vocês construíram! Hahahahaha! E, sabe, não se preocupe, meu caro Jim. 
-Sua presença será especialmente divertida enquanto eu assisto cada um de seus esforços 
-serem reduzidos a pó digital. Ah, a ironia... tão deliciosa quanto sua inevitável derrota!"
-
-\033[1;30;44m Sistema Restaurado!\033[0m
-
-\033[4;34;40m Jim:\033[0m
-
-Bom, agora que ela já se mandou para o além, vamos diretoao ponto: sua primeira missão de ranqueamento.
-Olha só o quadro de missões aqui. Você está no rank zero, então é melhor
-não brincar com nossos códigos ainda,vai que dá ruim, né?(risos macabros)
-Depois de riscar as dez tarefas do rank zero, vem o momento da verdade: uma prova para testar se você não é apenas mais 
-um desperdício de espaço. Se passar, oficializaremos sua entrada na guilda.
-Mas olha, não se empolga muito, a vida de membro aqui é um misto de sobrevivência e desespero. 
-Agora, vamos começar sua prova antes que eu mude de ideia e lembre \033[1;30;41m qualquer tentativa de comédia na prova resultará em questões descansando eternamente no limbo das anulações..\033[0m
-
-"""
-
 animar_texto(txt_de_continuidade_1)
 
-nota_da_prova = 0
 
 #pergunta1
 print("""
@@ -323,24 +333,14 @@ if questao_10.upper() == "A":
     nota_da_prova += 1
     
 
-print("""\033[4;34;40m Jim:\033[0m
-Hmm, então vamos ver como você se saiu. Será que é apenas mais um aspirante a programador 
-de meia dúzia de meses ou se realmente tem o que é preciso para entrar nessa grandiosa guilda dos codificadores?
-""")
 
+animar_texto(fala_que_vai_verificar_a_prova)
 passou_na_prova = True if nota_da_prova >= 6 else False
 
 if not passou_na_prova:
-    print("""
-    Ah, então você não conseguiu nem responder uma prova tão pífia. Normalmente, 
-    eu te chutaria logo para fora desta guilda; você não é digno de estar aqui. 
-    Mas como recebemos uma visita inesperada, quero ver o que o destino reserva para nós. 
-    Vá revisar sua prova naquele cantinho ali da sala e, quando aprender que programação 
-    não é brincadeira, volte e tente novamente.
+   
+    animar_texto(texto_passou_na_prova)
 
-    Enfim, aqui está a explicação de cada questão da prova
-
-""")
 #colocar as explicação das alternativas que errou
     if questao_1.upper() != "D":
         print("""
@@ -356,6 +356,7 @@ if not passou_na_prova:
         • Se nenhuma das condições anteriores for atendida, imprime 'veterano'. 
 
     """)
+        input("Aperte qualquer tecla para continuar.")
     if questao_2.upper() != "C":
         print("""
         ---------------------------------
@@ -366,6 +367,8 @@ if not passou_na_prova:
         True (Verdadeiro) ou False (Falso). Os valores booleanos são frequentemente usados 
         em expressões condicionais e em lógica de programação.
     """)
+        input("Aperte qualquer tecla para continuar.")
+        
     if questao_3.upper() != "A":
         print("""
         ---------------------------------
@@ -378,6 +381,9 @@ if not passou_na_prova:
         O loop 'while' é usado para iterar sobre os números de 1 a 10, chamando a função 
         escrever_multiplicacao e imprimindo cada expressão de multiplicação.
     """)
+        input("Aperte qualquer tecla para continuar.")
+        
+
     if questao_4.upper() != "B":
         print("""
         ---------------------------------
@@ -386,6 +392,8 @@ if not passou_na_prova:
         O comando print() é utilizado para imprimir informações na saída padrão, 
         que geralmente é a tela do computador do usuário.
     """)
+        input("Aperte qualquer tecla para continuar.")
+        
     if questao_5.upper() != "B":
         print("""
         ---------------------------------
@@ -395,6 +403,8 @@ if not passou_na_prova:
         Em seguida, ele utiliza um loop for para iterar sobre cada elemento da lista frutas e imprime 
         cada fruta na tela.
     """)
+        input("Aperte qualquer tecla para continuar.")
+        
     if questao_6.upper() != "A":
         print("""
         ---------------------------------
@@ -403,6 +413,8 @@ if not passou_na_prova:
         '==' é o operador de igualdade em Python. Sendo assim, esse operador compara um dado valor 
         com o o valor atribuído na variável 'idade'.
     """)
+        input("Aperte qualquer tecla para continuar.")
+        
     if questao_7.upper() != "D":
         print("""
         ---------------------------------
@@ -411,6 +423,8 @@ if not passou_na_prova:
         O operador % em Python realiza a operação de módulo, ou seja, 
         retorna o resto da divisão entre dois números.
     """)
+        input("Aperte qualquer tecla para continuar.")
+        
     if questao_8.upper() != "B":
         print("""
         ---------------------------------
@@ -420,6 +434,8 @@ if not passou_na_prova:
         indo até (mas não incluindo) 8, com um passo de 2. Em seguida, 
         o loop for itera sobre essa sequência e imprime cada número.
     """)
+        input("Aperte qualquer tecla para continuar.")
+        
     if questao_9.upper() != "C":
         print("""
         ---------------------------------
@@ -427,6 +443,8 @@ if not passou_na_prova:
         ---------------------------------
         A instrução 'else' em um bloco 'if' em Python é executada se a condição do 'if' for falsa.
     """)
+        input("Aperte qualquer tecla para continuar.")
+        
     if questao_10.upper() != "A":
         print("""
         ---------------------------------
@@ -434,13 +452,8 @@ if not passou_na_prova:
         ---------------------------------
         Em Python, a função utilizada para solicitar a entrada de um dado do usuário é input().
     """)
+        input("Aperte qualquer tecla para continuar.")
+        
 else:
-    print("""
-    Hahaha, nem tão inútil assim, pelo visto! Conseguiu passar nessa provinha que eu mesmo inventei. 
-    Parabéns, agora você é oficialmente parte dessa grandiosa guilda. Incrível, né? 
-    Haha, pode rir ou chorar, tanto faz. Bom, como membro oficial, você tem o 'privilégio' de acessar 
-    o quadro de missões e seu ranking atual é o sublime rank 1.
-    
-    Fim do Ato 0 - Introdução"
-""")
+    animar_texto(texto_reprovou_na_prova)
 
