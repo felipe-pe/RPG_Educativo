@@ -63,7 +63,10 @@ import sys
 def animar_texto(texto):
     for i in texto:
         print(i, end="")
+        
         sleep(.03)
+        
+animar_texto("ola mundo")
 
 # print("\033[4;34;47mTexto colorido\033[0m")
 
@@ -431,7 +434,6 @@ if not passou_na_prova:
         ---------------------------------
         Em Python, a função utilizada para solicitar a entrada de um dado do usuário é input().
     """)
-
 else:
     print("""
     Hahaha, nem tão inútil assim, pelo visto! Conseguiu passar nessa provinha que eu mesmo inventei. 
@@ -442,4 +444,3 @@ else:
     Fim do Ato 0 - Introdução"
 """)
 
-print("Ola mundo")
