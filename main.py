@@ -1,5 +1,16 @@
 from time import sleep
 import sys
+import subprocess
+
+
+
+
+
+
+
+
+
+
 #variaveis globais
 
 rosto_Jim = f"""
@@ -59,7 +70,7 @@ fala_que_vai_verificar_a_prova = """\033[4;34;40m Jim:\033[0m
 Hmm, então vamos ver como você se saiu. Será que é apenas mais um aspirante a programador 
 de meia dúzia de meses ou se realmente tem o que é preciso para entrar nessa grandiosa guilda dos codificadores?
 """
-texto_passou_na_prova = """
+texto_reprovou_na_prova = """
 Ah, então você não conseguiu nem responder uma prova tão pífia. Normalmente, 
 eu te chutaria logo para fora desta guilda; você não é digno de estar aqui. 
 Mas como recebemos uma visita inesperada, quero ver o que o destino reserva para nós. 
@@ -69,14 +80,20 @@ não é brincadeira, volte e tente novamente.
 Enfim, aqui está a explicação de cada questão da prova
     
 """
-texto_reprovou_na_prova = """
+texto_passou_na_prova = """
 Hahaha, nem tão inútil assim, pelo visto! Conseguiu passar nessa provinha que eu mesmo inventei. 
 Parabéns, agora você é oficialmente parte dessa grandiosa guilda. Incrível, né? 
 Haha, pode rir ou chorar, tanto faz. Bom, como membro oficial, você tem o 'privilégio' de acessar 
 o quadro de missões e seu ranking atual é o sublime rank 1.
 
-Fim do Ato 0 - Introdução"
-    """
+ Hora de afundar ou nadar, novato! Como de praxe, os calouros têm o 'privilégio' de resolver um 
+bug de código para mostrar que não foram aprovados por pura sorte, haha! Então, novato, está 
+pronto para o desafio? Haha, quem se importa, você vai ter que lidar com isso de qualquer forma. 
+Aqui está o seu primeiro pesadelo para resolver: nossa função de verificação de pessoas está mais confusa 
+do que um delírio de um lunático. Em vez de um valor correto, ela entrega dois. 
+Agora prove que não é só um azarado que passou na prova por acidente."
+
+"""
 nota_da_prova = 0
 
 """
@@ -132,6 +149,33 @@ def animar_texto(texto):
         sys.stdout.flush()
         sleep(.03)
         
+def abrir_editor(editor,arquivo):
+    subprocess.run([editor,arquivo])
+    input("Após a edição aperte ENTER para continuar.")
+    
+    
+def ler_arquivo_de_desafio(nome_do_desafio):
+    with open(f'./desafios/{nome_do_desafio}', 'r') as desafio:
+        return desafio.read()
+
+def executar_desafio(nome_do_desafio): 
+    return subprocess.run(['python', f'desafios/{nome_do_desafio}'],capture_output=True, text=True)
+
+def verificar_resultado_do_desafio(resultado):
+    match resultado.returncode:
+        case 0:
+            print("rodou o codigo normalmente")
+            #O codigo foi executado corretamente. Agora tem que verificar se a saida é o resultado esperado do desafio.
+            
+        case 1:
+            print("O codigo não rodou") 
+            #O codigo não foi executado por erro do codigo 
+            
+        case _:
+            ...
+            #Erros inesperados
+            
+
 print(rosto_Jim)
 
 
@@ -339,7 +383,7 @@ passou_na_prova = True if nota_da_prova >= 6 else False
 
 if not passou_na_prova:
    
-    animar_texto(texto_passou_na_prova)
+    animar_texto(texto_reprovou_na_prova)
 
 #colocar as explicação das alternativas que errou
     if questao_1.upper() != "D":
@@ -455,5 +499,7 @@ if not passou_na_prova:
         input("Aperte qualquer tecla para continuar.")
         
 else:
-    animar_texto(texto_reprovou_na_prova)
+    animar_texto(texto_passou_na_prova)
+    input("\nPressione ENTER quando estiver pronto para começar.")
 
+#Fim do Ato 0 - Introdução"
